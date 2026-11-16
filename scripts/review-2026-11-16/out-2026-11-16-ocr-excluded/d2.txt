@@ -1,0 +1,12 @@
+recall G C L 96.89 96.44 87.32
+Cbest 97.47437092264678
+G-C w/o dense (np.float64(1.71), array([0.75, 2.86]), 9694, 313)
+(0.05, 0.5) 1char C 78.7 G-C (np.float64(4.82), array([-3.79, 14.52]), 436, 47) all G-C (np.float64(-0.56), array([-2.48,  1.16]))
+(0.05, 0.7) 1char C 78.9 G-C (np.float64(4.59), array([-4.41, 13.97]), 436, 47) all G-C (np.float64(-0.59), array([-2.49,  1.21]))
+(0.1, 0.5) 1char C 73.4 G-C (np.float64(10.09), array([ 0.28, 21.08]), 436, 47) all G-C (np.float64(0.08), array([-1.81,  1.86]))
+(0.15, 0.5) 1char C 70.6 G-C (np.float64(12.84), array([ 2.96, 23.27]), 436, 47) all G-C (np.float64(0.45), array([-1.36,  2.21]))
+(0.25, 0.5) 1char C 66.5 G-C (np.float64(16.97), array([ 6.95, 28.41]), 436, 47) all G-C (np.float64(1.11), array([-0.65,  2.97]))
+2-3 G 89.8 Cbest 94.2
+label G 98.2 Cbest 98.0
+gemini4_det_rep2.jsonl all (np.float64(-0.7), array([-2.56,  0.98])) 1char (np.float64(4.13), array([-7.5, 14.6]))
+gemini4_det_rep3.jsonl all (np.float64(-0.2), array([-1.96,  1.33])) 1char (np.float64(2.75), array([-6.99, 12.73]))

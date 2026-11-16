@@ -1,0 +1,5 @@
+recall G C L 96.89 96.44 87.32
+Cbest 97.47437092264678
+G-C w/o dense (np.float64(1.71), array([0.75, 2.86]), 9694, 313)
+G-Cbest w/o dense (np.float64(0.89), array([0.22, 1.53]), 9694, 313)
+prints G>C 37 C>G 8 equal 270

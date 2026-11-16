@@ -1,0 +1,45 @@
+== counts: regions 10730 images 739 prints 315
+   regions per image median 7.0 ; characters 89238 median per region 6.0
+   by annotator [9429, 1264, 37]
+   labels Counter({'詞書': 6999, '札': 2787, '札?': 944})
+== Table 2 (Lite | Gemini 4 | C | C upper)
+   all n=10730 87.3 96.9 96.4 97.5
+   inscriptions n=6999 85.6 96.4 96.3 97.4
+   labels n=2787 91.4 98.2 97.3 98.0
+   1 char n=436 30.3 83.5 70.6 78.9
+   2-3 chars n=1820 63.8 89.8 91.5 94.2
+   cov>=0.9 68.6 89.5 79.0 80.5
+   cov=0 10.5 2.0 2.5 1.8
+   boxes 15006 8332 11245 12387 outside 5150 1452 603 936
+== intervals (seed 20261116 )
+   G - Lite +9.6 [5.5, 13.4] (regions 10730, prints 315)
+   G - C +0.4 [-1.4, 2.3] (regions 10730, prints 315)
+   G - Cupper -0.6 [-2.6, 1.2] (regions 10730, prints 315)
+   C - Lite +9.1 [4.4, 13.7] (regions 10730, prints 315)
+   G - C without 2 dense prints +1.7 [0.8, 2.8] (regions 9694, prints 313)
+   1 char G - C +12.8 [3.3, 23.5] (regions 436, prints 47)
+   1 char G - Cupper +4.6 [-4.3, 14.8] (regions 436, prints 47)
+   prints G>C 37 C>G 8 tie 270
+   outside the 30 worst images: 709 images, recall Lite/G/C 99.0 99.9 99.0
+   gemini4_det_rep2.jsonl: recall 96.8; - C +0.3 [-1.5, 2.2] (regions 10730, prints 315)
+   gemini4_det_rep3.jsonl: recall 97.3; - C +0.8 [-0.9, 2.6] (regions 10730, prints 315)
+   gemini4_read_det.jsonl: recall 96.3; - C -0.1 [-2.1, 1.8] (regions 10730, prints 315)
+== 5.3 overlap: both 10121 only G 275 only C 227 neither 107
+   only-C top 4 images [(('1990-032-206', '2'), 49), (('2013-24-1', '2'), 46), (('2013-24-1', '1'), 36), (('1990-032-206', '1'), 33)] sum 164 prints 2
+   band [0,0.5) n=118 images 9 G 83.1 C 67.8  C-G -15.3 [-34.5, 20.0] (regions 118, prints 7)
+   band [0.5,0.8) n=728 images 28 G 78.3 C 90.4  C-G +12.1 [-2.8, 16.4] (regions 728, prints 25)
+      without the 4 images n=245 G 81.2 C 82.4
+   band [0.8,1.2) n=1677 images 129 G 92.4 C 92.2  C-G -0.2 [-5.2, 3.7] (regions 1677, prints 98)
+   band [1.2,100) n=8207 images 736 G 99.7 C 98.3  C-G -1.4 [-2.2, -0.8] (regions 8207, prints 313)
+== dark regions 1398 C 93.9 G 93.6
+== figure 3 images: 2015-017-19 p1 6 of 6 ; 1990-032-206 p1 n 152 G 119 C 148
+== Lite without the 20% rule 87.7
+== Lite without the 200-box cap 88.0 (images replaced 4 )
+== Lite misses 1361 on 91 images; top 30 hold 94 %
+== marginal-publication keyword hits 4
+    2013-17
+    2014-007
+    1990-032-181
+    1990-032-143
+== Opus top30: images 30 regions 2891 Opus 68.2 G 88.8 C 89.8 Lite 56.0; G - Opus +20.5 [14.7, 25.8] (regions 2891, prints 26); Opus - Lite +12.2 [4.0, 25.6] (regions 2891, prints 26)
+== Opus random60: images 60 regions 717 Opus 90.1 G 99.9 C 96.7 Lite 99.0; G - Opus +9.8 [4.8, 15.1] (regions 717, prints 56); Opus - Lite -8.9 [-14.3, -3.9] (regions 717, prints 56)

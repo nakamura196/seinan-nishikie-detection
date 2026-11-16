@@ -1,0 +1,33 @@
+# env / secret files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*.kdbx
+credentials.json
+service-account*.json
+gha-creds-*.json
+.npmrc
+
+# not distributed (see README)
+data/rows*.tsv
+data/img/
+data/yolo/
+data/runs/
+data/cv_weights/
+data/cv_t2_weights/
+data/read/gt*.jsonl
+*.pkl
+*.pt
+*.json.gz
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/settings.json
+__pycache__/

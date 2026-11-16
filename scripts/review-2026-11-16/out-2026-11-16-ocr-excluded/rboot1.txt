@@ -1,0 +1,9 @@
+gt_mfb 89.1%
+none_m 86.9%
+fill_mfb 88.1%
+gemini_mfb 86.0%
+gemini_read 79.4%
+gt_mfb − none_m: +2.2 [1.0, 3.4]
+none_m − fill_mfb: -1.2 [-2.2, -0.3]
+fill_mfb − gemini_mfb: +2.1 [0.7, 3.7]
+gemini_mfb − gemini_read: +6.6 [4.8, 8.5]
