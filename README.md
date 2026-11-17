@@ -26,6 +26,7 @@ in 739 canvases of 316 nishiki-e prints of the Satsuma Rebellion (1877):
 | `data/claude_raw/` | Raw answers of Claude Opus 5.5, one file per canvas. |
 | `data/external/` | External test set (NDL Digital Collections, Sino-Japanese War prints): image list and machine outputs. |
 | `data/register/` | Registration of overlapping canvases of multi-sheet prints (used to extend the annotations in `rows_ext.py`). |
+| `data/outside_check/` | Manual check of detected regions that overlap no annotation ("outside boxes", Section 5.2): 100 random boxes each for YOLO11s (`main_C/s100.tsv`, drawn with seed 20261116 from an earlier sample of 150) and Gemini 4 (`gemini4/s100.tsv`). Coordinates are in full-image pixels. `judge` holds the class proposed by Claude Opus 5.5 (`claude:`) and the class decided by the first author (`author:`): `scene` (unannotated text in the picture), `margin` (marginal publication text, signatures, seals), `picture` (no text), `overlap` (a strip annotated on the overlapping neighbouring sheet), `unclear`. `combined/outside_check_author.tsv` holds the same 200 judgements in one table (`overlap` = fraction covered by annotations copied from the neighbouring sheet). The samples were drawn before the 257 OCR-tagged regions were excluded. |
 | `data/paper_tables.txt` | Output of `paper_tables.py`. |
 
 ## Multimodal models: instructions and run dates
